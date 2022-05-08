@@ -19,7 +19,8 @@ namespace AddressBookLINQ
                 Console.WriteLine("2.Update The person ");
                 Console.WriteLine("3.Delete person ");
                 Console.WriteLine("4.Retrieve persons Based on City or state");
-                Console.WriteLine("5.Exit");
+                Console.WriteLine("5.Retrieve Count Based on City and state ");
+                Console.WriteLine("6.Exit");
                 try
                 {
                     int choice = Convert.ToInt32(Console.ReadLine());
@@ -38,6 +39,9 @@ namespace AddressBookLINQ
                             management.displayContactUsingCityOrState();
                             break;
                         case 5:
+                            management.displayCountByCityAndState();
+                            break;
+                        case 6:
                             i = false;
                             break;
                         default:
