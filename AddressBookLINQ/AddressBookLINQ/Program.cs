@@ -17,7 +17,8 @@ namespace AddressBookLINQ
             {
                 Console.WriteLine("1.GetAllRecords");
                 Console.WriteLine("2.Update The person ");
-                Console.WriteLine("3.Exit");
+                Console.WriteLine("3.Delete person ");
+                Console.WriteLine("4.Exit");
                 try
                 {
                     int choice = Convert.ToInt32(Console.ReadLine());
@@ -30,6 +31,9 @@ namespace AddressBookLINQ
                             management.UpdatePersonByName();
                             break;
                         case 3:
+                            management.DeletePersonByName();
+                            break;
+                        case 4:
                             i = false;
                             break;
                         default:
