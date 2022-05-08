@@ -18,7 +18,8 @@ namespace AddressBookLINQ
                 Console.WriteLine("1.GetAllRecords");
                 Console.WriteLine("2.Update The person ");
                 Console.WriteLine("3.Delete person ");
-                Console.WriteLine("4.Exit");
+                Console.WriteLine("4.Retrieve persons Based on City or state");
+                Console.WriteLine("5.Exit");
                 try
                 {
                     int choice = Convert.ToInt32(Console.ReadLine());
@@ -34,6 +35,9 @@ namespace AddressBookLINQ
                             management.DeletePersonByName();
                             break;
                         case 4:
+                            management.displayContactUsingCityOrState();
+                            break;
+                        case 5:
                             i = false;
                             break;
                         default:
